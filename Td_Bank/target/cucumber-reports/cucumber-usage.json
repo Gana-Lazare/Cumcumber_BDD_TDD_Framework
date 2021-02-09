@@ -1,0 +1,20 @@
+[
+  {
+    "source": "I nagivate to td bank website",
+    "steps": [
+      {
+        "name": "I nagivate to td bank website",
+        "aggregatedDurations": {
+          "median": 15.0418604,
+          "average": 15.0418604
+        },
+        "durations": [
+          {
+            "duration": 15.0418604,
+            "location": "file:///C:/Users/micromedia/IdeaProjects/SeleniumFrameWorkGana/Td_Bank/src/main/java/TD_Bank_Features/Td_Bank_HomePage.feature:5"
+          }
+        ]
+      }
+    ]
+  }
+]

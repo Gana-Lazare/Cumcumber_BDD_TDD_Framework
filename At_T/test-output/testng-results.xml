@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="4" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-02-08T10:42:08 EST" name="AT_T TestSuite" finished-at="2021-02-08T10:42:36 EST" duration-ms="28430">
+    <groups>
+    </groups>
+    <test started-at="2021-02-08T10:42:08 EST" name="AT_T Test " finished-at="2021-02-08T10:42:36 EST" duration-ms="28430">
+      <class name="At_t_Test.AT_T_HomePageTest">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:At_t_Test.AT_T_HomePageTest@3a52dba3]" started-at="2021-02-08T10:42:08 EST" name="setup" finished-at="2021-02-08T10:42:16 EST" duration-ms="8833" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chromebrowser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.att.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="sendKeyWordSearch()[pri:0, instance:At_t_Test.AT_T_HomePageTest@3a52dba3]" started-at="2021-02-08T10:42:16 EST" name="sendKeyWordSearch" finished-at="2021-02-08T10:42:21 EST" duration-ms="4301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendKeyWordSearch -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:At_t_Test.AT_T_HomePageTest@3a52dba3]" started-at="2021-02-08T10:42:21 EST" name="closeBrowser" finished-at="2021-02-08T10:42:22 EST" duration-ms="920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- At_t_Test.AT_T_HomePageTest -->
+      <class name="At_t_Test.Sign_In_AccountTest">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:At_t_Test.Sign_In_AccountTest@2a5c8d3f]" started-at="2021-02-08T10:42:22 EST" name="setup" finished-at="2021-02-08T10:42:34 EST" duration-ms="12063" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chromebrowser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.att.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="insertCredentials()[pri:0, instance:At_t_Test.Sign_In_AccountTest@2a5c8d3f]" started-at="2021-02-08T10:42:34 EST" name="insertCredentials" finished-at="2021-02-08T10:42:35 EST" duration-ms="1381" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[invalid selector: Unable to locate an element with the xpath expression //*[contains(text(),'Sign in)] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//*[contains(text(),'Sign in)]' is not a valid XPath expression.
+  (Session info: chrome=88.0.4324.146)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MICROMEDIA-PC', ip: '192.168.1.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.146, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\MICROM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54131}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5517b466d8e97238ecd97771d6e3d671
+*** Element info: {Using=xpath, value=//*[contains(text(),'Sign in)]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //*[contains(text(),'Sign in)] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//*[contains(text(),'Sign in)]' is not a valid XPath expression.
+  (Session info: chrome=88.0.4324.146)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MICROMEDIA-PC', ip: '192.168.1.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.146, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\MICROM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54131}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5517b466d8e97238ecd97771d6e3d671
+*** Element info: {Using=xpath, value=//*[contains(text(),'Sign in)]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at common.WebAPI.clickOnelementsOfDropDownMenu(WebAPI.java:103)
+at AT_T.AT_T_HomePage.clickONSignIn_Account(AT_T_HomePage.java:38)
+at At_t_Test.Sign_In_AccountTest.insertCredentials(Sign_In_AccountTest.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertCredentials -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:At_t_Test.Sign_In_AccountTest@2a5c8d3f]" started-at="2021-02-08T10:42:35 EST" name="closeBrowser" finished-at="2021-02-08T10:42:36 EST" duration-ms="828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- At_t_Test.Sign_In_AccountTest -->
+    </test> <!-- AT_T Test  -->
+  </suite> <!-- AT_T TestSuite -->
+</testng-results>

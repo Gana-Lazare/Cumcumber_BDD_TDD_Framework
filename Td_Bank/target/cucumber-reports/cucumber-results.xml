@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="15.574">
+<testcase classname="Test All Home Page Featuree" name="test home page of" time="15.204">
+<system-out><![CDATA[Given I nagivate to td bank website.........................................passed
+]]></system-out>
+</testcase>
+</testsuite>

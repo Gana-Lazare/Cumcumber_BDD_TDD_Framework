@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- for a multithread -->
+<!--<suite name="TestSuite" thread-count="2" parallel="tests">-->
+<suite name="AT_T TestSuite" parallel="false">
+    <listeners>
+        <listener class-name="Reporting.ExtentReporterNG"></listener>
+    </listeners>
+    <parameter name="BrowserName" value="chromebrowser"></parameter>
+    <parameter name="url" value="https://www.att.com/"></parameter>
+
+    <test name="AT_T Test ">
+
+
+        <classes>
+            <class name="At_t_Test.AT_T_HomePageTest"></class>
+            <class name="At_t_Test.Sign_In_AccountTest"></class>
+
+            <!--  <class name="test.RegistrationPageTest"></class> -->
+        </classes>
+    </test>
+
+
+</suite>
+

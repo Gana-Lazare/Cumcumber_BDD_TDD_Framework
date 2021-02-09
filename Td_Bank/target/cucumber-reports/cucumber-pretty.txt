@@ -1,0 +1,3 @@
+
+Scenario: test home page of           # src/main/java/TD_Bank_Features/Td_Bank_HomePage.feature:4
+  Given I nagivate to td bank website # TD_Bank_StepDefinitions.Td_Bank_StepDefinitions.i_nagivate_to_td_bank_website()
