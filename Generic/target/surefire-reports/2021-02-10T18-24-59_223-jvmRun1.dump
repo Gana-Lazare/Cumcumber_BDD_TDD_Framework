@@ -1,4 +1,4 @@
-# Created at 2021-02-08T12:37:09.509
+# Created at 2021-02-10T18:25:01.373
 org.apache.maven.surefire.api.testset.TestSetFailedException: Suite file C:\Users\micromedia\IdeaProjects\SeleniumFrameWorkGana\Generic\src\test\resources\Test.xml is not a valid file
 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.locateTestSets(TestNGXmlTestSuite.java:99)
 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:118)
