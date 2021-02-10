@@ -4,9 +4,11 @@ import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
@@ -122,6 +124,14 @@ public static  List<WebElement> getLinksAsString(WebDriver driver){
     return mylinks;
 }
 
+public static void moveToAnElementAction(WebElement  element){
+    Actions action = new Actions(driver);
+    action.moveToElement(element).build().perform();
+}
+public static void scrollIntoViewElement(WebElement element){
+    JavascriptExecutor js = (JavascriptExecutor) driver;
+    js.executeScript("arguments[0].scrollIntoView(),",element);
+}
 @AfterMethod
     public static void closeBrowser(){
        driver.quit();

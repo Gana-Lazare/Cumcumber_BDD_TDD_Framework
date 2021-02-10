@@ -1,3 +1,21 @@
 
-Scenario: test home page of           # src/main/java/TD_Bank_Features/Td_Bank_HomePage.feature:4
-  Given I nagivate to td bank website # TD_Bank_StepDefinitions.Td_Bank_StepDefinitions.i_nagivate_to_td_bank_website()
+Scenario: Log in with credentials                 # src/test/java/TD_Bank_Features/OnlineBankingPage.feature:3
+  Given I nagivate to td bank website             # TD_Bank_StepDefinitions.Td_HomePage_StepDefinitions.i_nagivate_to_td_bank_website()
+  And I mouse Over Login                          # TD_Bank_StepDefinitions.Td_HomePage_StepDefinitions.i_mouse_over_login()
+  And i click on Online Banking                   # TD_Bank_StepDefinitions.Td_HomePage_StepDefinitions.i_click_on_online_banking()
+  And I search  for my data corresponding         # TD_Bank_StepDefinitions.OnlineBanking_StepDefinitions.i_search_for_my_data_corresponding()
+  And I enter "userName" and "Password"           # TD_Bank_StepDefinitions.OnlineBanking_StepDefinitions.i_enter_and(java.lang.String,java.lang.String)
+  When I click on log in                          # TD_Bank_StepDefinitions.OnlineBanking_StepDefinitions.i_click_on_log_in()
+  Then message incorrect credentials should apear # TD_Bank_StepDefinitions.OnlineBanking_StepDefinitions.message_incorrect_credentials_should_apear()
+
+Scenario: Navigate to online Banking under Log IN Drop Down Menu # src/test/java/TD_Bank_Features/Td_Bank_HomePage.feature:9
+  Given I nagivate to td bank website                            # TD_Bank_StepDefinitions.Td_HomePage_StepDefinitions.i_nagivate_to_td_bank_website()
+  And I mouse Over Login                                         # TD_Bank_StepDefinitions.Td_HomePage_StepDefinitions.i_mouse_over_login()
+  When i click on Online Banking                                 # TD_Bank_StepDefinitions.Td_HomePage_StepDefinitions.i_click_on_online_banking()
+  Then I should see online banking url                           # TD_Bank_StepDefinitions.Td_HomePage_StepDefinitions.i_should_see_online_banking_url()
+
+Scenario: Search anything on searchbare          # src/test/java/TD_Bank_Features/Td_Bank_HomePage.feature:15
+  Given I nagivate to td bank website            # TD_Bank_StepDefinitions.Td_HomePage_StepDefinitions.i_nagivate_to_td_bank_website()
+  And I send searchkey "searchkey" on searchbare # TD_Bank_StepDefinitions.Td_HomePage_StepDefinitions.i_send_searchkey_on_searchbare(java.lang.String)
+  When i submit my search                        # TD_Bank_StepDefinitions.Td_HomePage_StepDefinitions.i_submit_my_search()
+  Then i should see the keysearch n search page  # TD_Bank_StepDefinitions.Td_HomePage_StepDefinitions.i_should_see_the_keysearch_n_search_page()

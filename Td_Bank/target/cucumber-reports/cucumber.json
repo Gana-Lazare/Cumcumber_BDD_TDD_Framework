@@ -3,34 +3,249 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-02-08T22:51:21.610Z",
-        "line": 4,
-        "name": "test home page of",
+        "start_timestamp": "2021-02-10T22:49:43.914Z",
+        "line": 3,
+        "name": "Log in with credentials",
         "description": "",
-        "id": "test-all-home-page-featuree;test-home-page-of",
+        "id": "online-banking-page-test-features;log-in-with-credentials",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 15041860400,
+              "duration": 22004258600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I nagivate to td bank website",
+            "match": {
+              "location": "TD_Bank_StepDefinitions.Td_HomePage_StepDefinitions.i_nagivate_to_td_bank_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 469026800,
               "status": "passed"
             },
             "line": 5,
+            "name": "I mouse Over Login",
+            "match": {
+              "location": "TD_Bank_StepDefinitions.Td_HomePage_StepDefinitions.i_mouse_over_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16567947600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "i click on Online Banking",
+            "match": {
+              "location": "TD_Bank_StepDefinitions.Td_HomePage_StepDefinitions.i_click_on_online_banking()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4000200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I search  for my data corresponding",
+            "match": {
+              "location": "TD_Bank_StepDefinitions.OnlineBanking_StepDefinitions.i_search_for_my_data_corresponding()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter \"userName\" and \"Password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"userName\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"Password\"",
+                  "offset": 23
+                }
+              ],
+              "location": "TD_Bank_StepDefinitions.OnlineBanking_StepDefinitions.i_enter_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on log in",
+            "match": {
+              "location": "TD_Bank_StepDefinitions.OnlineBanking_StepDefinitions.i_click_on_log_in()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "message incorrect credentials should apear",
+            "match": {
+              "location": "TD_Bank_StepDefinitions.OnlineBanking_StepDefinitions.message_incorrect_credentials_should_apear()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Online Banking Page test Features",
+    "description": "",
+    "id": "online-banking-page-test-features",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/TD_Bank_Features/OnlineBankingPage.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-10T22:50:23.152Z",
+        "line": 9,
+        "name": "Navigate to online Banking under Log IN Drop Down Menu",
+        "description": "",
+        "id": "test-all-home-page-featuree;navigate-to-online-banking-under-log-in-drop-down-menu",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13583776900,
+              "status": "passed"
+            },
+            "line": 10,
             "name": "I nagivate to td bank website",
             "match": {
-              "location": "TD_Bank_StepDefinitions.Td_Bank_StepDefinitions.i_nagivate_to_td_bank_website()"
+              "location": "TD_Bank_StepDefinitions.Td_HomePage_StepDefinitions.i_nagivate_to_td_bank_website()"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 275015700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I mouse Over Login",
+            "match": {
+              "location": "TD_Bank_StepDefinitions.Td_HomePage_StepDefinitions.i_mouse_over_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17567004800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "i click on Online Banking",
+            "match": {
+              "location": "TD_Bank_StepDefinitions.Td_HomePage_StepDefinitions.i_click_on_online_banking()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I should see online banking url",
+            "match": {
+              "location": "TD_Bank_StepDefinitions.Td_HomePage_StepDefinitions.i_should_see_online_banking_url()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-10T22:50:54.640Z",
+        "line": 15,
+        "name": "Search anything on searchbare",
+        "description": "",
+        "id": "test-all-home-page-featuree;search-anything-on-searchbare",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14381822600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I nagivate to td bank website",
+            "match": {
+              "location": "TD_Bank_StepDefinitions.Td_HomePage_StepDefinitions.i_nagivate_to_td_bank_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2497142900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I send searchkey \"searchkey\" on searchbare",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"searchkey\"",
+                  "offset": 17
+                }
+              ],
+              "location": "TD_Bank_StepDefinitions.Td_HomePage_StepDefinitions.i_send_searchkey_on_searchbare(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "i submit my search",
+            "match": {
+              "location": "TD_Bank_StepDefinitions.Td_HomePage_StepDefinitions.i_submit_my_search()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "i should see the keysearch n search page",
+            "match": {
+              "location": "TD_Bank_StepDefinitions.Td_HomePage_StepDefinitions.i_should_see_the_keysearch_n_search_page()"
+            },
+            "keyword": "Then "
           }
         ]
       }
     ],
     "name": "Test All Home Page Featuree",
-    "description": "",
+    "description": "//  Scenario: test Small business navigation\n //   Given I nagivate to td bank website\n//    When   I Click on smallBusiness\n//    Then I should see small business Banking",
     "id": "test-all-home-page-featuree",
     "keyword": "Feature",
-    "uri": "file:src/main/java/TD_Bank_Features/Td_Bank_HomePage.feature",
+    "uri": "file:src/test/java/TD_Bank_Features/Td_Bank_HomePage.feature",
     "tags": []
   }
 ]

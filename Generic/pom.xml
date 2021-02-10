@@ -244,7 +244,23 @@
                         </execution>
                     </executions>
                 </plugin>
-
+                <plugin>
+                    <groupId> org.apache.maven.plugins </groupId>
+                    <artifactId> maven-failsafe-plugin </artifactId>
+                    <executions> <execution>
+                        <goals>
+                            <goal> integration-test </goal>
+                            <goal> verify </goal>
+                        </goals>
+                        <configuration>
+                            <includes>
+                                <include>**/Runner.java</include>
+                            </includes>
+                            <parallel > methods </parallel>
+                            <threadCount> 4 </threadCount>
+                            <perCoreThreadCount> true </perCoreThreadCount>
+                        </configuration> </execution> </executions>
+                </plugin>
             </plugins>
 
 

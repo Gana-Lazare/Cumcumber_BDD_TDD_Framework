@@ -1,6 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="15.574">
-<testcase classname="Test All Home Page Featuree" name="test home page of" time="15.204">
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="88.02">
+<testcase classname="Online Banking Page test Features" name="Log in with credentials" time="39.204">
 <system-out><![CDATA[Given I nagivate to td bank website.........................................passed
+And I mouse Over Login......................................................passed
+And i click on Online Banking...............................................passed
+And I search  for my data corresponding.....................................passed
+And I enter "userName" and "Password".......................................passed
+When I click on log in......................................................passed
+Then message incorrect credentials should apear.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test All Home Page Featuree" name="Navigate to online Banking under Log IN Drop Down Menu" time="31.472">
+<system-out><![CDATA[Given I nagivate to td bank website.........................................passed
+And I mouse Over Login......................................................passed
+When i click on Online Banking..............................................passed
+Then I should see online banking url........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test All Home Page Featuree" name="Search anything on searchbare" time="16.886">
+<system-out><![CDATA[Given I nagivate to td bank website.........................................passed
+And I send searchkey "searchkey" on searchbare..............................passed
+When i submit my search.....................................................passed
+Then i should see the keysearch n search page...............................passed
 ]]></system-out>
 </testcase>
 </testsuite>

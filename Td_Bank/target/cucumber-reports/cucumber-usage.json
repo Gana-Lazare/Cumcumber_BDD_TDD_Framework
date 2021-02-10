@@ -5,13 +5,209 @@
       {
         "name": "I nagivate to td bank website",
         "aggregatedDurations": {
-          "median": 15.0418604,
-          "average": 15.0418604
+          "median": 14.3818226,
+          "average": 16.656619366
         },
         "durations": [
           {
-            "duration": 15.0418604,
-            "location": "file:///C:/Users/micromedia/IdeaProjects/SeleniumFrameWorkGana/Td_Bank/src/main/java/TD_Bank_Features/Td_Bank_HomePage.feature:5"
+            "duration": 22.0042586,
+            "location": "file:///C:/Users/micromedia/IdeaProjects/SeleniumFrameWorkGana/Td_Bank/src/test/java/TD_Bank_Features/OnlineBankingPage.feature:4"
+          },
+          {
+            "duration": 13.5837769,
+            "location": "file:///C:/Users/micromedia/IdeaProjects/SeleniumFrameWorkGana/Td_Bank/src/test/java/TD_Bank_Features/Td_Bank_HomePage.feature:10"
+          },
+          {
+            "duration": 14.3818226,
+            "location": "file:///C:/Users/micromedia/IdeaProjects/SeleniumFrameWorkGana/Td_Bank/src/test/java/TD_Bank_Features/Td_Bank_HomePage.feature:16"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I mouse Over Login",
+    "steps": [
+      {
+        "name": "I mouse Over Login",
+        "aggregatedDurations": {
+          "median": 0.37202125,
+          "average": 0.37202125
+        },
+        "durations": [
+          {
+            "duration": 0.4690268,
+            "location": "file:///C:/Users/micromedia/IdeaProjects/SeleniumFrameWorkGana/Td_Bank/src/test/java/TD_Bank_Features/OnlineBankingPage.feature:5"
+          },
+          {
+            "duration": 0.2750157,
+            "location": "file:///C:/Users/micromedia/IdeaProjects/SeleniumFrameWorkGana/Td_Bank/src/test/java/TD_Bank_Features/Td_Bank_HomePage.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "i click on Online Banking",
+    "steps": [
+      {
+        "name": "i click on Online Banking",
+        "aggregatedDurations": {
+          "median": 17.0674762,
+          "average": 17.0674762
+        },
+        "durations": [
+          {
+            "duration": 16.5679476,
+            "location": "file:///C:/Users/micromedia/IdeaProjects/SeleniumFrameWorkGana/Td_Bank/src/test/java/TD_Bank_Features/OnlineBankingPage.feature:6"
+          },
+          {
+            "duration": 17.5670048,
+            "location": "file:///C:/Users/micromedia/IdeaProjects/SeleniumFrameWorkGana/Td_Bank/src/test/java/TD_Bank_Features/Td_Bank_HomePage.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I search  for my data corresponding",
+    "steps": [
+      {
+        "name": "I search  for my data corresponding",
+        "aggregatedDurations": {
+          "median": 0.0040002,
+          "average": 0.0040002
+        },
+        "durations": [
+          {
+            "duration": 0.0040002,
+            "location": "file:///C:/Users/micromedia/IdeaProjects/SeleniumFrameWorkGana/Td_Bank/src/test/java/TD_Bank_Features/OnlineBankingPage.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I enter {string} and {string}",
+    "steps": [
+      {
+        "name": "I enter \"userName\" and \"Password\"",
+        "aggregatedDurations": {
+          "median": 0.001,
+          "average": 0.001
+        },
+        "durations": [
+          {
+            "duration": 0.001,
+            "location": "file:///C:/Users/micromedia/IdeaProjects/SeleniumFrameWorkGana/Td_Bank/src/test/java/TD_Bank_Features/OnlineBankingPage.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on log in",
+    "steps": [
+      {
+        "name": "I click on log in",
+        "aggregatedDurations": {
+          "median": 0.001,
+          "average": 0.001
+        },
+        "durations": [
+          {
+            "duration": 0.001,
+            "location": "file:///C:/Users/micromedia/IdeaProjects/SeleniumFrameWorkGana/Td_Bank/src/test/java/TD_Bank_Features/OnlineBankingPage.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "message incorrect credentials should apear",
+    "steps": [
+      {
+        "name": "message incorrect credentials should apear",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///C:/Users/micromedia/IdeaProjects/SeleniumFrameWorkGana/Td_Bank/src/test/java/TD_Bank_Features/OnlineBankingPage.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should see online banking url",
+    "steps": [
+      {
+        "name": "I should see online banking url",
+        "aggregatedDurations": {
+          "median": 0.0010001,
+          "average": 0.0010001
+        },
+        "durations": [
+          {
+            "duration": 0.0010001,
+            "location": "file:///C:/Users/micromedia/IdeaProjects/SeleniumFrameWorkGana/Td_Bank/src/test/java/TD_Bank_Features/Td_Bank_HomePage.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I send searchkey {string} on searchbare",
+    "steps": [
+      {
+        "name": "I send searchkey \"searchkey\" on searchbare",
+        "aggregatedDurations": {
+          "median": 2.4971429,
+          "average": 2.4971429
+        },
+        "durations": [
+          {
+            "duration": 2.4971429,
+            "location": "file:///C:/Users/micromedia/IdeaProjects/SeleniumFrameWorkGana/Td_Bank/src/test/java/TD_Bank_Features/Td_Bank_HomePage.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "i submit my search",
+    "steps": [
+      {
+        "name": "i submit my search",
+        "aggregatedDurations": {
+          "median": 0.0010001,
+          "average": 0.0010001
+        },
+        "durations": [
+          {
+            "duration": 0.0010001,
+            "location": "file:///C:/Users/micromedia/IdeaProjects/SeleniumFrameWorkGana/Td_Bank/src/test/java/TD_Bank_Features/Td_Bank_HomePage.feature:18"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "i should see the keysearch n search page",
+    "steps": [
+      {
+        "name": "i should see the keysearch n search page",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///C:/Users/micromedia/IdeaProjects/SeleniumFrameWorkGana/Td_Bank/src/test/java/TD_Bank_Features/Td_Bank_HomePage.feature:19"
           }
         ]
       }

@@ -10,13 +10,14 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>Generic</module>
-        <module>Unitedhealth</module>
-        <module>At_T</module>
+       <!-- <module>At_T</module>-->
         <module>Td_Bank</module>
     </modules>
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <junit.version>4.13.1</junit.version>
+        <cucumber.version>6.9.1</cucumber.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
@@ -218,59 +219,34 @@
                         <target>1.8</target>
                     </configuration>
                 </plugin>
-                <plugin>
+                 <plugin>
+
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>3.0.0-M5</version>
                     <dependencies>
-                        <!-- importing a new dependancy for surefire  testng -->
+                        <!-- importing a new dependancy for surefire  testng-->
                         <dependency>
                             <groupId>org.apache.maven.surefire</groupId>
                             <artifactId>surefire-testng</artifactId>
                             <version>3.0.0-M5</version>
                         </dependency>
-                    </dependencies>
+                   </dependencies>
                     <configuration>
                         <!-- comment the suiteXmlFILE part to be aible to run the Junit INclude part
                         other wise it's not running the junit part  need to figure it out how to run both using
-                        Mave, -->
-                        <suiteXmlFiles>
-                            <suiteXmlFile>src\test\resources\Test.xml</suiteXmlFile>
-                        </suiteXmlFiles>
-
-                        <testFailureIgnore>true</testFailureIgnore>
+                        Mave,-->
+                        <!--<suiteXmlFiles>
+                           <suiteXmlFile>src\test\resources\Runner.xml</suiteXmlFile>
+                        </suiteXmlFiles>-->
                         <includes>
-                            <!-- <exclude>**\TestRunner.java</exclude>-->
+                            <include>**/Runner.java</include>
                         </includes>
+                        <testFailureIgnore>true</testFailureIgnore>
                     </configuration>
                 </plugin>
-                <plugin>
-                    <groupId>net.masterthought</groupId>
-                    <artifactId>maven-cucumber-reporting</artifactId>
-                    <version>5.0.0</version>
-                    <executions>
-                        <execution>
-                            <id>execution</id>
-                            <phase>verify</phase>
-                            <goals>
-                                <goal>generate</goal>
-                            </goals>
-                            <configuration>
-                                <projectName>Web Automation Cucumber Reports</projectName>
-                                <outputDirectory>target/cucumber-reports/advanced-reports</outputDirectory>
-                                <buildNumber>1</buildNumber>
-                                <skip>false</skip>
-                                <inputDirectory>${project.build.directory}/cucumber-reports</inputDirectory>
-                                <jsonFiles>
-                                    <param>**/*.json</param>
-                                </jsonFiles>
-                                <classificationDirectory>${project.build.directory}/cucumber-reports
-                                </classificationDirectory>
-                                <checkBuildResult>false</checkBuildResult>
-                            </configuration>
-                        </execution>
-                    </executions>
-                </plugin>
+
+
 
             </plugins>
 
